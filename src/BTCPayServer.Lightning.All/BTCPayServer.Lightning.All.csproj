@@ -9,9 +9,16 @@
 		<Description>Client library for lightning network implementations to build Lightning Network Apps in C#.</Description>
 		<PackageProjectUrl>https://github.com/btcpayserver/BTCPayServer.Lightning</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/btcpayserver/BTCPayServer.Lightning</RepositoryUrl>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+ 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageTags>lightning;bitcoin;clightning;lnd;charge;lapps</PackageTags>
+		<!-- For sourcelink -->
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
 	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-*" PrivateAssets="All"/>
+	<ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\BTCPayServer.Lightning.Charge\BTCPayServer.Lightning.Charge.csproj" />
